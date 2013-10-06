@@ -7,16 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Library.h"
 
 int main(int argc, const char * argv[])
 {
-
   @autoreleasepool {
-      
-      // insert code here...
-      NSLog(@"Hello, World!");
-      
+    Library *my_library = [[Library alloc] init];
+    [my_library initialize];
+    [my_library seedShelves];
+    [my_library reportShelves];
+    [my_library reShelfBook: @"Beowulf" ontoShelf: @"romance"];
+    [my_library reportShelves];
   }
-    return 0;
+  return 0;
 }
-

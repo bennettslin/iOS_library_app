@@ -10,6 +10,9 @@
 		3F10B1D117FD10A9003BBF6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F10B1D017FD10A9003BBF6C /* Foundation.framework */; };
 		3F10B1D417FD10A9003BBF6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F10B1D317FD10A9003BBF6C /* main.m */; };
 		3F10B1D817FD10A9003BBF6C /* Library_app.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3F10B1D717FD10A9003BBF6C /* Library_app.1 */; };
+		3F10B1E017FD116F003BBF6C /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F10B1DF17FD116F003BBF6C /* Library.m */; };
+		3F3ABB9617FE437A00676EDF /* Shelf.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ABB9517FE437A00676EDF /* Shelf.m */; };
+		3F3ABB9917FE438500676EDF /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ABB9817FE438500676EDF /* Book.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,12 @@
 		3F10B1D317FD10A9003BBF6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F10B1D617FD10A9003BBF6C /* Library_app-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Library_app-Prefix.pch"; sourceTree = "<group>"; };
 		3F10B1D717FD10A9003BBF6C /* Library_app.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Library_app.1; sourceTree = "<group>"; };
+		3F10B1DE17FD116F003BBF6C /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
+		3F10B1DF17FD116F003BBF6C /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
+		3F3ABB9417FE437A00676EDF /* Shelf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shelf.h; sourceTree = "<group>"; };
+		3F3ABB9517FE437A00676EDF /* Shelf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shelf.m; sourceTree = "<group>"; };
+		3F3ABB9717FE438400676EDF /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		3F3ABB9817FE438500676EDF /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +82,12 @@
 		3F10B1D217FD10A9003BBF6C /* Library_app */ = {
 			isa = PBXGroup;
 			children = (
+				3F3ABB9717FE438400676EDF /* Book.h */,
+				3F3ABB9817FE438500676EDF /* Book.m */,
+				3F3ABB9417FE437A00676EDF /* Shelf.h */,
+				3F3ABB9517FE437A00676EDF /* Shelf.m */,
+				3F10B1DE17FD116F003BBF6C /* Library.h */,
+				3F10B1DF17FD116F003BBF6C /* Library.m */,
 				3F10B1D317FD10A9003BBF6C /* main.m */,
 				3F10B1D717FD10A9003BBF6C /* Library_app.1 */,
 				3F10B1D517FD10A9003BBF6C /* Supporting Files */,
@@ -139,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3ABB9917FE438500676EDF /* Book.m in Sources */,
+				3F3ABB9617FE437A00676EDF /* Shelf.m in Sources */,
 				3F10B1D417FD10A9003BBF6C /* main.m in Sources */,
+				3F10B1E017FD116F003BBF6C /* Library.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +269,7 @@
 				3F10B1DD17FD10A9003BBF6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
