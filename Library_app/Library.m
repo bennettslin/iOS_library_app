@@ -26,12 +26,8 @@
   unsigned long int shelf_count = [self.all_shelves count];
   NSLog(@"%lu shelves in library.", shelf_count);
   for (id shelf in self.all_shelves) {
-//    if ([shelf isKindOfClass:[Shelf class]])
-//      NSLog(@"Yes, it's a shelf.");
     NSLog(@"%@", [[shelf genre] uppercaseString]);
     for (id book in [shelf all_books]) {
-//      if ([book isKindOfClass:[Book class]])
-//        NSLog(@"Yes, it's a book.");
       NSLog(@" %@", [book title]);
     }
   }
